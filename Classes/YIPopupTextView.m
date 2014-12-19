@@ -233,7 +233,7 @@ typedef enum {
         self.frame = UIEdgeInsetsInsetRect(_popupView.frame, _textViewInsets);
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.font = [UIFont systemFontOfSize:TEXT_SIZE];
-        self.keyboardAppearance = UIKeyboardAppearanceAlert;
+        self.keyboardAppearance = UIKeyboardAppearanceLight;
         self.autocorrectionType = UITextAutocorrectionTypeNo;
         self.autocapitalizationType = UITextAutocapitalizationTypeNone;
         self.layer.cornerRadius = 10;
