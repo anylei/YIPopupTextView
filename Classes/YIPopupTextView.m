@@ -22,7 +22,7 @@
 #define TEXT_SIZE           (IS_IPAD ? 32 : 16)
 #define COUNT_SIZE          (IS_IPAD ? 32 : 16)
 #define COUNT_MARGIN        (IS_IPAD ? 20 : 10)
-#define CLOSE_IMAGE_WIDTH   (IS_IPAD ? 60 : 30)
+#define CLOSE_IMAGE_WIDTH   (IS_IPAD ? 84 : 42)
 #define CLOSE_BUTTON_WIDTH  (IS_IPAD ? 88 : 44)
 
 #define ANIMATION_DURATION  0.25
@@ -254,7 +254,7 @@ typedef enum {
             [_popupView addSubview:_countLabel];
         }
         
-        CGFloat buttonRisingRatio = 0.3;
+        CGFloat buttonRisingRatio = 0.5;
         
         // close (cancel) button
         if (buttonStyle == YIPopupTextViewButtonStyleRightCancel ||
@@ -277,7 +277,7 @@ typedef enum {
                     autoresizing = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
                     break;
                 case YIPopupTextViewButtonStyleRightCancelAndDone:
-                    buttonX = _popupView.bounds.size.width-_textViewInsets.right-(2-buttonRisingRatio)*CLOSE_IMAGE_WIDTH;
+                    buttonX = _popupView.bounds.size.width-_textViewInsets.right-(2.5-buttonRisingRatio)*CLOSE_IMAGE_WIDTH;
                     autoresizing = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
                     break;
                 default:
